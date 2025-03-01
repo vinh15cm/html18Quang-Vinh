@@ -28,6 +28,27 @@ if (number >= 0 && number <= 999) {
 
     if (tens === 0 && ones !== 0) {
         result += " Linh";
+        if (ones === 1 ) {
+            result += " Mốt";
+        } else if (ones === 2) {
+            result += " Hai";
+        } else if (ones === 3) {
+            result += " Ba";
+        } else if (ones === 4) {
+            result += " Bốn";
+        } else if (ones === 5 && tens !== 0) {
+            result += " Lăm";
+        } else if (ones === 5) {
+            result += " Năm";
+        } else if (ones === 6) {
+            result += " Sáu";
+        } else if (ones === 7) {
+            result += " Bảy";
+        } else if (ones === 8) {
+            result += " Tám";
+        } else if (ones === 9) {
+            result += " Chín";
+        }
     }
     
     if (tens === 1) {
@@ -65,25 +86,25 @@ if (number >= 0 && number <= 999) {
             result += " Chín Mươi";
         }
         
-        if (ones === 1 && tens > 1) {
+        if (ones === 1 && tens >= 1 ) {
             result += " Mốt";
-        } else if (ones === 2) {
+        } else if (ones === 2 && tens >= 1) {
             result += " Hai";
-        } else if (ones === 3) {
+        } else if (ones === 3 && tens >= 1) {
             result += " Ba";
-        } else if (ones === 4) {
+        } else if (ones === 4 && tens >= 1) {
             result += " Bốn";
         } else if (ones === 5 && tens !== 0) {
             result += " Lăm";
-        } else if (ones === 5) {
+        } else if (ones === 5 && tens >= 1) {
             result += " Năm";
-        } else if (ones === 6) {
+        } else if (ones === 6 && tens >= 1) {
             result += " Sáu";
-        } else if (ones === 7) {
+        } else if (ones === 7 && tens >= 1) {
             result += " Bảy";
-        } else if (ones === 8) {
+        } else if (ones === 8&& tens >= 1) {
             result += " Tám";
-        } else if (ones === 9) {
+        } else if (ones === 9&& tens >= 1) {
             result += " Chín";
         }
     }
